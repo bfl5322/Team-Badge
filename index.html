@@ -16,9 +16,23 @@
 </head>
 
 <body>
-  <team-badge></team-badge>
+  <div class="searchbar">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><simple-icon icon="icons:search"></simple-icon></button>
+    </div>
+    
+    <div class="header">
+    <h1>NBA Encyclopedia</h1>
+    
+    </div>
+    <div class="details">
+    <p>Use the search bar to find your favorite team, and use the dropdown to learn more.
+    </p>
+    </div>
+  <team-resource></team-resource>
 
   <script type="module" src="./src/team-badge.js"></script>
+  <script type="module" src="./src/team-resource.js"></script>
 </body>
 
 </html>
