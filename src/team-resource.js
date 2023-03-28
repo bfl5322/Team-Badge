@@ -49,15 +49,15 @@ constructor() {
         "Hof": "22" 
     },
     {
-        "name": "The Milwaukee Bucks",
-        "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
-        "location": "Milwaukee, WI",
-        "wins": "53",
-        "losses": "12",
-        "Hof": "15" 
+        "name": "Boston Celtics ",
+        "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg",
+        "location": "Boston, MA",
+        "wins": "52",
+        "losses": "23",
+        "Hof": "37" 
     },
     {
-        "name": "The Milwaukee Bucks",
+        "name": "",
         "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
         "location": "Milwaukee, WI",
         "wins": "53",
