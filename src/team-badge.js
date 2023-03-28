@@ -82,19 +82,18 @@ class TeamBadge extends LitElement {
   render() {
     return html`
 
-    <div class="card">
-    <img src="${this.image}">
+ 
     <div class="wrapper">
-    <h4><b>${this.name}</b></h4>
-
-<a11y-collapse icon="add" heading="<p>Details</p>">
-    <p>Location: ${this.location}</p>
-    <p>Wins: ${this.wins}</p>
-    <p>Losses: ${this.losses}</p>
-    <p>Hall of Famers: ${this.Hof}</p>
-</a11y-collapse> 
-
-    </div>
+    <a11y-collapse icon="add" heading="<p>Details</p>" img='${this.image}'>
+          <p slot="heading"> ${this.name} </p>
+          <b slot="img"></b>
+          <div slot="content">
+            <p>Location: ${this.location}</p>
+            <p>Wins: ${this.wins}</p>
+            <p>Losses: ${this.losses}</p>
+            <p>Hall of Famers: ${this.Hof}</p>
+          </div>
+          </a11y-collapse>
     </div>
     `;
   }
