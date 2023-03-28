@@ -41,6 +41,14 @@ constructor() {
         "Hof": "15" 
     },
     {
+        "name": "The Milwaukee fut",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
+        "location": "Milwaukee, WI",
+        "wins": "53",
+        "losses": "12",
+        "Hof": "15" 
+    },
+    {
         "name": "New York Knicks",
         "image": "https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg",
         "location": "New York, NY",
