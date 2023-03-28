@@ -73,7 +73,7 @@ constructor() {
         "Hof": "15" 
     },
     {
-        "name": "The Milwaukee Bucks",
+        "name": "Philadelphia 76ers",
         "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
         "location": "Milwaukee, WI",
         "wins": "53",
