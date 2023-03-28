@@ -33,7 +33,7 @@ constructor() {
     super();
     this.team = [
       {
-        "name": "The Milwaukee Bucks",
+        "name": "Milwaukee Bucks",
         "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
         "location": "Milwaukee, WI",
         "wins": "53",
@@ -41,12 +41,12 @@ constructor() {
         "Hof": "15" 
     },
     {
-        "name": "The Milwaukee fut",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
-        "location": "Milwaukee, WI",
-        "wins": "53",
-        "losses": "12",
-        "Hof": "15" 
+        "name": "Philadelphia 76ers",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Philadelphia_76ers_Logo.svg/990px-Philadelphia_76ers_Logo.svg.png?20170916111445",
+        "location": "Philadelphia, PA",
+        "wins": "49",
+        "losses": "26",
+        "Hof": "9" 
     },
     {
         "name": "New York Knicks",
@@ -65,20 +65,12 @@ constructor() {
         "Hof": "37" 
     },
     {
-        "name": "",
+        "name": "Brooklyn Nets",
         "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
-        "location": "Milwaukee, WI",
-        "wins": "53",
-        "losses": "12",
-        "Hof": "15" 
-    },
-    {
-        "name": "Philadelphia 76ers",
-        "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
-        "location": "Milwaukee, WI",
-        "wins": "53",
-        "losses": "12",
-        "Hof": "15" 
+        "location": "Brooklyn, Nets",
+        "wins": "40",
+        "losses": "35",
+        "Hof": "11" 
     }
     ]
   }
