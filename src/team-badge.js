@@ -84,9 +84,9 @@ class TeamBadge extends LitElement {
 
  
     <div class="wrapper">
-    <a11y-collapse icon="add" heading="<p>Details</p>" img='<b>Image</b>'>
-          <p slot="heading"> ${this.name} </p>
-          <b slot="img">${this.image}</b>
+    <a11y-collapse icon="add">
+    <p slot="heading">${this.name}</p>
+    <p img src="${this.image}"></p>
           <div slot="content">
             <p>Location: ${this.location}</p>
             <p>Wins: ${this.wins}</p>
