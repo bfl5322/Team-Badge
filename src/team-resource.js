@@ -19,10 +19,12 @@ class teamresource extends LitElement {
         }
         .wrapper {
             border: 2px solid black;
-            display: flex;
+            display: inline-block;
+            width: 45%;
         }
         .item {
             display: inline-flex;
+            
         }
     `;
     }

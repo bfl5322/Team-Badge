@@ -54,10 +54,11 @@ class TeamBadge extends LitElement {
   .wrapper {
    padding: 2px 16px;
    color: blue;  
-   width: auto;
+   width: 175%;
    }
    .details {
     color: blue;
+    
    }
    .header{
     font-size: 50px;
@@ -69,6 +70,7 @@ class TeamBadge extends LitElement {
     }
     .heading{
       font-size: 100px;
+      
     }
   `;
 
