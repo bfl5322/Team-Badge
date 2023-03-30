@@ -37,9 +37,11 @@ class TeamBadge extends LitElement {
       color: var(--team-badge-text-color, #000);
     }
   img {
-    width: 100%;
-    height: 100%;
-  }
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+}
   .card {
    transition: 0.3s;
    width: 100%;
@@ -65,6 +67,9 @@ class TeamBadge extends LitElement {
       position: relative;
       display: flex;
     }
+    .heading{
+      font-size: 100px;
+    }
   `;
 
   constructor() {
@@ -85,8 +90,8 @@ class TeamBadge extends LitElement {
  
     <div class="wrapper">
     <a11y-collapse icon="add">
-    <p slot="heading">${this.name}</p>
-    <p img src="${this.image}"></p>
+    <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
+
           <div slot="content">
             <p>Location: ${this.location}</p>
             <p>Wins: ${this.wins}</p>
