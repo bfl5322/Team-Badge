@@ -22,6 +22,7 @@ class teamresource extends LitElement {
             display: inline-block;
             width: 40%;
             
+            
         }
         .item {
             display: inline-flex;

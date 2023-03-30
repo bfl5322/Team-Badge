@@ -37,13 +37,14 @@ class TeamBadge extends LitElement {
       color: var(--team-badge-text-color, #000);
     }
   img {
-    float: left;
-    width:  100px;
-    height: 100px;
+    float: center;
+    width:  50px;
+    height: 50px;
     background-size: cover;
+  
     
 }
-  .card {
+  /* .card {
    transition: 0.3s;
    width: 100%;
    color: blue;
@@ -51,21 +52,23 @@ class TeamBadge extends LitElement {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-  }
+    
+  } */
   .wrapper {
-   padding: 2px 16px;
+   padding: 2px 160px;
    color: black;  
    width: 1000px;
-   margin-bottom: -90px;
+   margin-bottom: -20%;
    
    
    }
    .details {
     color: blue;
-    
+    font-size: 100px;
    }
    .header{
     font-size: 50px;
+    
    }
     .searchbar {
       width: 100%;
@@ -76,6 +79,7 @@ class TeamBadge extends LitElement {
       font-size: 100px;
       
     }
+    
   `;
 
   constructor() {
