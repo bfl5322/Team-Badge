@@ -56,7 +56,8 @@ class TeamBadge extends LitElement {
    padding: 2px 16px;
    color: black;  
    width: 1000px;
-   margin-bottom: -85px;
+   margin-bottom: -90px;
+   
    
    }
    .details {
