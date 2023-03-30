@@ -18,9 +18,10 @@ class teamresource extends LitElement {
             display: block;
         }
         .wrapper {
-            border: 2px solid black;
+            
             display: inline-block;
-            width: 45%;
+            width: 40%;
+            
         }
         .item {
             display: inline-flex;
@@ -68,7 +69,7 @@ constructor() {
     },
     {
         "name": "Brooklyn Nets",
-        "image": "https://play-lh.googleusercontent.com/bXpwOYyoSr8PdQmFFmzADtGE-1ZATkQZ_qIWl2pyrqxAfCMjzB4feWFp1gvweSUbMJM=w240-h480-rw",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1024px-Brooklyn_Nets_newlogo.svg.png",
         "location": "Brooklyn, Nets",
         "wins": "40",
         "losses": "35",

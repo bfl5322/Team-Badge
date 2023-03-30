@@ -41,6 +41,7 @@ class TeamBadge extends LitElement {
     width:  100px;
     height: 100px;
     background-size: cover;
+    
 }
   .card {
    transition: 0.3s;
@@ -54,7 +55,7 @@ class TeamBadge extends LitElement {
   .wrapper {
    padding: 2px 16px;
    color: blue;  
-   width: 175%;
+   width: 1000px;
    }
    .details {
     color: blue;
