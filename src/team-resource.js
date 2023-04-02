@@ -25,7 +25,9 @@ class teamresource extends LitElement {
             
         }
         .item {
-            display: inline-flex;
+            padding: 20px;
+            margin-bottom: 0;
+            margin-bottom: -20px;
             
         }
     `;

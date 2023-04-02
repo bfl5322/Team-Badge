@@ -55,10 +55,10 @@ class TeamBadge extends LitElement {
     
   } */
   .wrapper {
-   padding: 2px 160px;
+   padding: 2px 16px;
    color: black;  
    width: 1000px;
-   margin-bottom: -20%;
+   margin-bottom: -90px;
    
    
    }
@@ -79,7 +79,6 @@ class TeamBadge extends LitElement {
       font-size: 100px;
       
     }
-    
   `;
 
   constructor() {
@@ -99,7 +98,7 @@ class TeamBadge extends LitElement {
 
  
     <div class="wrapper">
-    <a11y-collapse icon="add">
+    <a11y-collapse icon="expand-more">
     <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
 
           <div slot="content">
