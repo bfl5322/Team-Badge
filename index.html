@@ -24,6 +24,15 @@
     <div class="searchbar">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><simple-icon icon="icons:search"></simple-icon></button>
+      <ul class="dropdown teams"></ul>
+
+      <li class="teams">Milwaukee Bucks</li>
+      <li class="teams">Philadelphia 76ers</li>
+      <li class="teams">New York Knicks</li>
+      <li class="teams">Boston Celtics</li>
+      <li class="teams">Brooklyn Nets</li> 
+      
+      </ul>
       </div>
 
    
@@ -33,7 +42,28 @@
     </div>
   <team-resource></team-resource>
   
-  <script type="module" src="./src/team-badge.js"></script>
+  <script type="module" src="./src/team-badge.js">
+    document.querySelector('#search').
+      addEventListener('input', filterList)
+  
+      function filterList(){
+        const searchInput = document.querySelector('#search');
+        const filter = searchInput.value.toLowerCase();
+        const listItems = document.querySelectorAll('.teams');
+  
+        listItems.forEach((item) => {
+          let text=item.textContent
+          if(text.toLowerCase().includes(filter.toLowerCase())){
+            item.style.display='';
+          }
+          else{
+            item.style.display='none';
+          }
+        }
+  
+        )
+      }
+  </script>
   <script type="module" src="./src/team-resource.js"></script>
 
 </body>
