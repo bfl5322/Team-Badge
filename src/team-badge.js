@@ -28,9 +28,12 @@ class TeamBadge extends LitElement {
       reflect: true },
     Hof: { type: String,
       reflect: true },
-  }
+  };
 
-  static styles = css`
+
+
+  static get styles () {
+    return css`
     :host {
       display: block;
       padding: 25px;
@@ -41,7 +44,7 @@ class TeamBadge extends LitElement {
     width:  50px;
     height: 50px;
     background-size: cover;
-  
+    
     
 }
   /* .card {
@@ -55,20 +58,18 @@ class TeamBadge extends LitElement {
     
   } */
   .wrapper {
-   padding: 2px 16px;
-   color: black;  
-   width: 1000px;
-   margin-bottom: -90px;
-   
-   
+  border: 1px solid black; 
+   width: 100%;
+   background-color: light blue;
+   margin-bottom: -20%;
    }
    .details {
     color: blue;
     font-size: 100px;
    }
-   .header{
-    font-size: 50px;
-    
+   .h1{
+    font-size: 200px;
+    color:white;
    }
     .searchbar {
       width: 100%;
@@ -79,8 +80,12 @@ class TeamBadge extends LitElement {
       font-size: 100px;
       
     }
+    .page-container {
+      border-color:black;
+      display: flex;
+    }
   `;
-
+  }
   constructor() {
     super();
     this.header = 'NBA Encyclopedia';
@@ -91,10 +96,12 @@ class TeamBadge extends LitElement {
     this.wins = ""
     this.losses = ""
     this.Hof = ""
-  }
+  
+}
 
   render() {
     return html`
+
 
  
     <div class="wrapper">
