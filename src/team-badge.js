@@ -28,6 +28,7 @@ class TeamBadge extends LitElement {
       reflect: true },
     Hof: { type: String,
       reflect: true },
+      
   };
 
 
