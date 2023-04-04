@@ -8,6 +8,7 @@ import '@lrnwebcomponents/a11y-collapse/a11y-collapse.js';
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
 class TeamBadge extends LitElement {
+  // reflect: true not needed on all these
   static properties = {
     header: { type: String,
       reflect: true
@@ -62,7 +63,6 @@ class TeamBadge extends LitElement {
   border: 1px solid black; 
    width: 100%;
    background-color: light blue;
-   margin-bottom: -20%;
    }
    .details {
     color: blue;
@@ -99,14 +99,14 @@ class TeamBadge extends LitElement {
     this.Hof = ""
   
 }
-
+// heading-button makes the whole thing clickable
   render() {
     return html`
 
 
  
     <div class="wrapper">
-    <a11y-collapse icon="expand-more">
+    <a11y-collapse icon="expand-more" heading-button>
     <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
 
           <div slot="content">
