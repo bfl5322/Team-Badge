@@ -15,22 +15,20 @@
   <title>team-badge</title>
 </head>
 
-<body style="background-color:lightblue">
-    
-    <div class="header" style="background-color:#1d2630";>
-    <h1 style="color: white; font-size: 80px;" >NBA Encyclopedia</h1>
-    </div>
+<body>
+     
+   
 
     <div class="searchbar">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><simple-icon icon="icons:search"></simple-icon></button>
       <ul class="dropdown teams"></ul>
 
-      <li class="teams">Milwaukee Bucks</li>
-      <li class="teams">Philadelphia 76ers</li>
-      <li class="teams">New York Knicks</li>
-      <li class="teams">Boston Celtics</li>
-      <li class="teams">Brooklyn Nets</li> 
+      <li class="teams">Amazon Cognito</li>
+      <li class="teams">Amazon | AM</li>
+      <li class="teams">Signing up for AWS Web Services</li>
+      <li class="teams">AWS - LAMBDA Phase 1</li>
+      <li class="teams">Amazon S3 Phase 1</li> 
       
       </ul>
       </div>
@@ -40,30 +38,10 @@
     <p>Use the search bar to find your favorite team, and use the dropdown to learn more.
     </p>
     </div>
+    <div class="header">Badges (5)</div>
   <team-resource></team-resource>
   
-  <script type="module" src="./src/team-badge.js">
-    document.querySelector('#search').
-      addEventListener('input', filterList)
-  
-      function filterList(){
-        const searchInput = document.querySelector('#search');
-        const filter = searchInput.value.toLowerCase();
-        const listItems = document.querySelectorAll('.teams');
-  
-        listItems.forEach((item) => {
-          let text=item.textContent
-          if(text.toLowerCase().includes(filter.toLowerCase())){
-            item.style.display='';
-          }
-          else{
-            item.style.display='none';
-          }
-        }
-  
-        )
-      }
-  </script>
+  <script type="module" src="./src/team-badge.js"></script>
   <script type="module" src="./src/team-resource.js"></script>
 
 </body>

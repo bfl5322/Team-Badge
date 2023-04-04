@@ -1,3 +1,4 @@
+
 import { LitElement, html, css } from 'lit';
 import '@lrnwebcomponents/simple-icon/simple-icon.js';
 import "@lrnwebcomponents/simple-icon/lib/simple-icons.js";
@@ -48,48 +49,27 @@ class TeamBadge extends LitElement {
     
     
 }
-  /* .card {
-   transition: 0.3s;
-   width: 100%;
-   color: blue;
-    border: 1px solid blueviolet;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    
-  } */
+  
+ 
   .wrapper {
   border: 1px solid black; 
    width: 100%;
-   background-color: light blue;
    margin-bottom: -20%;
    }
    .details {
     color: blue;
     font-size: 100px;
    }
-   .h1{
-    font-size: 200px;
-    color:white;
-   }
-    .searchbar {
-      width: 100%;
-      position: relative;
-      display: flex;
-    }
-    .heading{
-      font-size: 100px;
-      
-    }
-    .page-container {
-      border-color:black;
-      display: flex;
-    }
+   
+    
+    
+    
+    
   `;
   }
   constructor() {
     super();
-    this.header = 'NBA Encyclopedia';
+    
     this.detail = 'Use the search bar to find your favorite team, and use the dropdown to learn more.';
     this.name = ""
     this.image = ""
