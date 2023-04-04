@@ -52,13 +52,22 @@ class TeamBadge extends LitElement {
   
  
   .wrapper {
-  border: 1px solid black; 
-   width: 100%;
-   margin-bottom: -20%;
+  padding: 0px;
+  border-width: 2px 2px 2px 40px;
+  border-style: solid;
+  border-color: #3e98d3;
+  border-radius: 12px;
+  margin: 24px;
+  color: #fff;
+  background-color: white;
    }
-   .details {
-    color: blue;
-    font-size: 100px;
+   a11y-collapse {
+    margin: 0px;
+    background-color: lightblue;
+    border-color: blue;
+    border: none;
+    
+    
    }
    
     

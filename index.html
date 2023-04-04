@@ -17,28 +17,31 @@
 
 <body>
      
-   
+   <div class="header" style="background-color: rgb(47, 47, 74); color: white; font-family: 'Trebuchet MS', sans-serif;">
+    <h1>Amazon Web Services Intro</h1> 
+    <button class="bookmark" style="background-color: transparent; color: white;">Bookmark</button>
+    <button class="accept" style="background-color: transparent; color: white;">Accept Mission</button>
+   </div>
 
+   <div class="details">
+    <p style="color: gray; font-size: large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Here you will learn how to set up an account for AWS, 
+      how to create a root user, 
+      a | AM user account, 
+      set up MFA on your Root and | AM accounts, 
+      set up a user pool in Amazon Cognito, 
+      how to upload and use Amazon S3, 
+      and how to use Amazon Lambda
+    </p>
+    </div>
     <div class="searchbar">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><simple-icon icon="icons:search"></simple-icon></button>
-      <ul class="dropdown teams"></ul>
-
-      <li class="teams">Amazon Cognito</li>
-      <li class="teams">Amazon | AM</li>
-      <li class="teams">Signing up for AWS Web Services</li>
-      <li class="teams">AWS - LAMBDA Phase 1</li>
-      <li class="teams">Amazon S3 Phase 1</li> 
       
-      </ul>
       </div>
 
    
-    <div class="details">
-    <p>Use the search bar to find your favorite team, and use the dropdown to learn more.
-    </p>
-    </div>
-    <div class="header">Badges (5)</div>
+    
+    <div class="header" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: grey; font-size: x-large;">Badges (5)</div>
   <team-resource></team-resource>
   
   <script type="module" src="./src/team-badge.js"></script>
