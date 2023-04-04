@@ -22,12 +22,9 @@ class teamresource extends LitElement {
             display: inline-block;
             width: 40%;
             
-            
         }
         .item {
-            padding: 20px;
             margin-bottom: 0;
-            margin-bottom: -20px;
             
         }
     `;
@@ -37,6 +34,7 @@ class teamresource extends LitElement {
 
 constructor() {
     super();
+    // make this come from an endpoint like api/teams.js as per examples in the video
     this.team = [
       {
         "name": "Milwaukee Bucks",
