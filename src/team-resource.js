@@ -20,7 +20,12 @@ class teamresource extends LitElement {
         
         .item {
             padding: 20px;
+<<<<<<< HEAD
             width: 100%;  
+=======
+            width: 100%;
+            
+>>>>>>> 2e1b182becbf514867655117ff43d7a621f0b8fb
         }
         
     `;
@@ -33,15 +38,15 @@ constructor() {
     this.team = [
       {
         "name": "Amazon Cognito",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
+        "image": "https://www.drupal.org/files/styles/grid-3-2x/public/project-images/553dbabbd287c26ca83aef42.jpg?itok=ruAqqobg",
         "location": "Milwaukee, WI",
         "wins": "53",
         "losses": "12",
         "Hof": "15" 
     },
     {
-        "name": "Amazon | AM",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Philadelphia_76ers_Logo.svg/990px-Philadelphia_76ers_Logo.svg.png?20170916111445",
+        "name": "Amazon I AM",
+        "image": "https://i0.wp.com/sra.io/wp-content/uploads/2020/01/AWS-IAM-Exploitation.png?fit=1102%2C620&ssl=1",
         "location": "Philadelphia, PA",
         "wins": "49",
         "losses": "26",
@@ -49,7 +54,7 @@ constructor() {
     },
     {
         "name": "Signing up for AWS Web Services",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg",
+        "image": "https://i.pcmag.com/imagery/reviews/0179dSC1AqaTy8DbcTJMDYE-7..v1569472044.jpg",
         "location": "New York, NY",
         "wins": "42",
         "losses": "33",
@@ -57,7 +62,7 @@ constructor() {
     },
     {
         "name": "AWS - LAMBDA Phase 1",
-        "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg",
+        "image": "https://khalilstemmler.com/img/blog/serverless/aws-lambda.png",
         "location": "Boston, MA",
         "wins": "52",
         "losses": "23",
@@ -65,7 +70,7 @@ constructor() {
     },
     {
         "name": "Amazon S3 Phase 1",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1024px-Brooklyn_Nets_newlogo.svg.png",
+        "image": "https://www.cleo.com/sites/default/files/2018-10/logo_amazon-s3_module-11.png",
         "location": "Brooklyn, Nets",
         "wins": "40",
         "losses": "35",
