@@ -66,9 +66,7 @@ class TeamBadge extends LitElement {
     background-color: lightblue;
     border-color: blue;
     border: none;
-    
-    
-   }
+    }
    
     
     
@@ -86,26 +84,38 @@ class TeamBadge extends LitElement {
     this.wins = ""
     this.losses = ""
     this.Hof = ""
-  
+    this.fetchdata();
+}
+
+fetchdata() {
+  const address= new URL("../assets/details.json", import.meta.url).href;
+  const data = fetch(address).then((response) => {
+    if(response.ok) {
+      return response.json();
+    }
+    return[];
+  })
+  .then(data => {
+    this.team = data;
+  })
 }
 
   render() {
     return html`
-
-
- 
     <div class="wrapper">
     <a11y-collapse icon="expand-more">
-    <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
+      <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
 
-          <div slot="content">
-            <p>Location: ${this.location}</p>
-            <p>Wins: ${this.wins}</p>
-            <p>Losses: ${this.losses}</p>
-            <p>Hall of Famers: ${this.Hof}</p>
-          </div>
-          </a11y-collapse>
-    </div>
+        <div slot="content">
+          <p>Location: ${this.location}</p>
+          <p>Wins: ${this.wins}</p>
+          <p>Losses: ${this.losses}</p>
+          <p>Hall of Famers: ${this.Hof}</p>
+        </div>
+      </a11y-collapse>
+  </div>
+    
+    
     `;
   }
 }
