@@ -17,6 +17,7 @@ class teamresource extends LitElement {
         :host {
             display: block;
         }
+<<<<<<< HEAD
         .wrapper {
             border: 1px solid black;
             display: inline-block;
@@ -24,12 +25,16 @@ class teamresource extends LitElement {
             
             
         }
+=======
+        
+>>>>>>> c37a8c770595e781e695b6dc827c78c2127ca8c6
         .item {
             padding: 20px;
-            margin-bottom: 0;
-            margin-bottom: -20px;
+            width: 100%;
+            height: 50px;
             
         }
+        
     `;
     }
 
@@ -40,14 +45,22 @@ constructor() {
     this.team = [
       {
         "name": "Amazon Cognito",
+<<<<<<< HEAD
         "image": "https://www.pikpng.com/transpng/bTowmb/",
+=======
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
+>>>>>>> c37a8c770595e781e695b6dc827c78c2127ca8c6
         "location": "Milwaukee, WI",
         "wins": "53",
         "losses": "12",
         "Hof": "15" 
     },
     {
+<<<<<<< HEAD
         "name": "Amazon I AM",
+=======
+        "name": "Amazon | AM",
+>>>>>>> c37a8c770595e781e695b6dc827c78c2127ca8c6
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Philadelphia_76ers_Logo.svg/990px-Philadelphia_76ers_Logo.svg.png?20170916111445",
         "location": "Philadelphia, PA",
         "wins": "49",
@@ -55,7 +68,11 @@ constructor() {
         "Hof": "9" 
     },
     {
+<<<<<<< HEAD
         "name": "Signing for AWS Web Services",
+=======
+        "name": "Signing up for AWS Web Services",
+>>>>>>> c37a8c770595e781e695b6dc827c78c2127ca8c6
         "image": "https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg",
         "location": "New York, NY",
         "wins": "42",
@@ -63,7 +80,11 @@ constructor() {
         "Hof": "22" 
     },
     {
+<<<<<<< HEAD
         "name": "AWS-LAMDA Phase 1",
+=======
+        "name": "AWS - LAMBDA Phase 1",
+>>>>>>> c37a8c770595e781e695b6dc827c78c2127ca8c6
         "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg",
         "location": "Boston, MA",
         "wins": "52",
