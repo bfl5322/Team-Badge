@@ -57,7 +57,7 @@ class TeamBadge extends LitElement {
   border-style: solid;
   border-color: #3e98d3;
   border-radius: 12px;
-  margin: 24px;
+  margin: -3%;
   color: #fff;
   background-color: white;
    }
@@ -67,8 +67,13 @@ class TeamBadge extends LitElement {
     border-color: blue;
     border: none;
     }
-   
+   .dropdown{
+    background-color: white;
     
+   }
+    p{
+      color: black;
+    }
     
     
     
@@ -77,7 +82,7 @@ class TeamBadge extends LitElement {
   constructor() {
     super();
     
-    this.detail = 'Use the search bar to find your favorite team, and use the dropdown to learn more.';
+    
     this.name = ""
     this.image = ""
     this.location = ""
@@ -88,7 +93,7 @@ class TeamBadge extends LitElement {
 }
 
 fetchdata() {
-  const address= new URL("../assets/details.json", import.meta.url).href;
+  const address= new URL("../src/team-resource.js", import.meta.url).href;
   const data = fetch(address).then((response) => {
     if(response.ok) {
       return response.json();
@@ -104,9 +109,9 @@ fetchdata() {
     return html`
     <div class="wrapper">
     <a11y-collapse icon="expand-more">
-      <p slot="heading"><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
+      <p slot="heading" ><img src="${this.image}" alt="Team Logo" width="100" height="100"> ${this.name}</p>
 
-        <div slot="content">
+        <div class="dropdown" slot="content">
           <p>Location: ${this.location}</p>
           <p>Wins: ${this.wins}</p>
           <p>Losses: ${this.losses}</p>
