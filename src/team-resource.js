@@ -17,7 +17,13 @@ class teamresource extends LitElement {
         :host {
             display: block;
         }
-        
+        .wrapper {
+            border: 1px solid black;
+            display: inline-block;
+            width: 40%;
+            
+            
+        }
         .item {
             padding: 20px;
             width: 100%;
@@ -35,14 +41,14 @@ constructor() {
     this.team = [
       {
         "name": "Amazon Cognito",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
+        "image": "https://www.pikpng.com/transpng/bTowmb/",
         "location": "Milwaukee, WI",
         "wins": "53",
         "losses": "12",
         "Hof": "15" 
     },
     {
-        "name": "Amazon | AM",
+        "name": "Amazon I AM",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Philadelphia_76ers_Logo.svg/990px-Philadelphia_76ers_Logo.svg.png?20170916111445",
         "location": "Philadelphia, PA",
         "wins": "49",
@@ -50,7 +56,7 @@ constructor() {
         "Hof": "9" 
     },
     {
-        "name": "Signing up for AWS Web Services",
+        "name": "Signing for AWS Web Services",
         "image": "https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg",
         "location": "New York, NY",
         "wins": "42",
@@ -58,7 +64,7 @@ constructor() {
         "Hof": "22" 
     },
     {
-        "name": "AWS - LAMBDA Phase 1",
+        "name": "AWS-LAMDA Phase 1",
         "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg",
         "location": "Boston, MA",
         "wins": "52",
@@ -78,13 +84,12 @@ constructor() {
 
   render() {
     return html`
-        <div class="wrapper">
+
             ${this.team.map(team => html`
             <div class="item">
                 <team-badge name="${team.name}" image="${team.image}" location="${team.location}" wins="${team.wins}" losses="${team.losses}" Hof="${team.Hof}"></team-badge>
             </div>
             `)}
-        </div>
     `;
   }
 }
