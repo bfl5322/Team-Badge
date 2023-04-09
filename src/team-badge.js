@@ -6,7 +6,7 @@ import '@lrnwebcomponents/a11y-collapse/a11y-collapse.js';
 
 
 
-const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
+
 
 class TeamBadge extends LitElement {
   static properties = {
@@ -15,7 +15,7 @@ class TeamBadge extends LitElement {
 },
     detail: { type: String,
       reflect: true},
-    team: { type: Array,
+    teams: { type: Array,
       reflect: true },
     name: { type: String,
       reflect: true },
@@ -98,8 +98,8 @@ class TeamBadge extends LitElement {
     this.fetchdata();
 }
 
-fetchdata() {
-  const address= new URL("../src/team-resource.js", import.meta.url).href;
+ fetchdata() {
+  const address= new URL("../api/badges.js", import.meta.url).href;
   const data = fetch(address).then((response) => {
     if(response.ok) {
       return response.json();
@@ -107,9 +107,10 @@ fetchdata() {
     return[];
   })
   .then(data => {
-    this.team = data;
+    this.teams = data;
   })
-}
+ }
+
 
   render() {
     return html`
